@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+:root {
+  --nb-color: 180;
+}
+.dark:root {
+  --tx: white;
+  --color-60: hsl(var(--nb-color), 100%, 1%);
+  --color-30: hsl(var(--nb-color), 100%, 5%);
+  --color-10: hsl(var(--nb-color), 100%, 60%);
+  --gr: hsla(0, 0%, 50%, 0.3);
+}
+.light:root {
+  --tx: black;
+  --color-60: hsl(var(--nb-color), 100%, 98%);
+  --color-30: hsl(var(--nb-color), 100%, 95%);
+  --color-10: hsl(var(--nb-color), 100%, 30%);
+  --gr: hsla(0, 0%, 50%, 0.3);
+  --shadow: hsla(0, 0%, 0%, 0.4);
+}
